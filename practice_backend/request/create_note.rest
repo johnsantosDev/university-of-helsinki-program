@@ -1,0 +1,8 @@
+POST http://localhost:3001/api/notes
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InNtaXNocmEiLCJpZCI6IjYzN2I4NzFmYzcyYzM3YjY3ZTIzN2Q3OSIsImlhdCI6MTY2OTA1OTU4MH0.qgxMPN0HO4QJQsL6En_pafUzyVTmqEsVdDhY0ETrb7o
+
+{
+    "content": "fullstack fullstack front to back to databse to testing",
+    "important": true
+}

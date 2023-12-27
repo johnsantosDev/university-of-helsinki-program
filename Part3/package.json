@@ -1,0 +1,37 @@
+{
+  "name": "part3",
+  "version": "1.0.0",
+  "description": "backend development with node and express",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:ui": "rm -rf build && cd ../Part2/phonebook && npm run build && cp -r build ../../part3",
+    "deploy": "fly deploy",
+    "deploy:full": "npm run build:ui && npm run deploy",
+    "logs:prods": "fly logs",
+    "status": "fly status",
+    "open": "fly open",
+    "lint": "eslint ."
+  },
+  "keywords": [
+    "app",
+    "use",
+    "express"
+  ],
+  "author": "Suraj Mishra",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^8.27.0",
+    "nodemon": "^2.0.20"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mongoose": "^6.7.2",
+    "morgan": "^1.10.0"
+  }
+}
